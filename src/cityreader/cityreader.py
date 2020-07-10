@@ -95,8 +95,6 @@ def cityreader_stretch(lat1, lon1, lat2, lon2, cities=[]):
   lat2 = float(lat2)
   lon2 = float(lon2)
   # normalize input data
-  if not((lat1 > lat2 and lon1 > lon2) or (lat2 > lat1 and lon2 > lon1)):
-      lon1, lon2 = lon2, lon1
   if lat2 > lat1:
       lat1, lat2 = lat2, lat1
   if lon2 > lon1:
